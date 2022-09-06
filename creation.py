@@ -1,5 +1,7 @@
-#!/Usr/bin/env python
+#!/usr/bin/env python
 #-- coding:utf-8 --
+
+import random
 
 def createPerso(pseudo,pv,force,armure):
     arrayPerso=""
@@ -7,14 +9,14 @@ def createPerso(pseudo,pv,force,armure):
     return arrayPerso
 
 def degatMonstre(pseudo):
-    pv=random.randrange(5,20)
-    force=random.randrange(3,8)
-    armure=random.randrange(0,5)
-	arrayDegat=[pseudo,pv,force,armure]
+    pv=random.randint(5,20)
+    force=random.randint(3,8)
+    armure=random.randint(0,5)
+    arrayDegat=[pseudo,pv,force,armure]
     return arrayDegat
-
-print(f"{mon_tuple[0]} + {mon_tuple[1]} = {mon_tuple[2]}")
-    return arrayDegat
+a=degatMonstre("martin")
+print(a)
+   
 
 def degatPerso(array,degats):
     pvRestant=""
