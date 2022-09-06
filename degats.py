@@ -1,11 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-pv_perso1=50
-pv_perso2=10
-force=7
-armure=2
+pv_att=7
+armure_def=2
 def attaque():
-    coup=force-armure
-    pv_restant=(pv_perso1-coup)
-    print(pv_restant)
+    coup=pv_att-armure_def
+    print(coup)
 attaque()
